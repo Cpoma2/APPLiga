@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Barcelona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #6b002d;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Barcelona.png" width="125" height="auto" align="center">
+        <img src="Montjuic.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Hansi Flick</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Joan Laporta</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1899</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Camp Nou</span>
+        </div>
+    </div>
+
+    <section id="Barcelona">
+        <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Marc-André ter Stegen<img src="players/terStegen.png" class="foto"></h3>
+            <h3>13 Iñaki Peña<img src="players/Pena.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Barcellona"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Pau Cubarsí (DC)<img src="players/Cubarsi.png" class="foto"></h3>
+            <h3>3 Alejandro Balde (TS)<img src="players/Balde.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 Ronald Araujo (DC)<img src="players/Araujo.png" class="foto"></h3>
+            <h3>5 Iñigo Martínez (DC)<img src="players/Martinez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Andreas Christensen (DC)<img src="players/Christensen.png" class="foto"></h3>
+            <h3>23 Jules Koundé (TD)<img src="players/Kounde.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>24 Eric García (DC)<img src="players/EricGarcia.png" class="foto"></h3>
+            <h3>32 Héctor Fort (TD)<img src="players/Fort.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Barcellona"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>6 Gavi (CC)<img src="players/Gavi.png" class="foto"></h3>
+            <h3>8 Pedri (CC)<img src="players/Pedri.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Pablo Torre (CC)<img src="players/Torre.png" class="foto"></h3>
+            <h3>16 Fermín López (CC)<img src="players/FerminLopez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Marc Casadó (CC)<img src="players/Casado.png" class="foto"></h3>
+            <h3>20 Dani Olmo (TQ)<img src="players/Olmo.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>21 Frenkie de Jong (CC)<img src="players/DeJong.png" class="foto"></h3>
+            <h3>28 Marc Bernal (CC)<img src="players/Bernal.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Barcellona"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Ferran Torres (AS)<img src="players/Ferran.png" class="foto"></h3>
+            <h3>9 Robert Lewandowski (AT)<img src="players/Lewandowski.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>10 Ansu Fati (AS)<img src="players/Fati.png" class="foto"></h3>
+            <h3>11 Raphinha (AD)<img src="players/Raphinha.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>18 Pau Víctor (AT)<img src="players/Victor.png" class="foto"></h3>
+            <h3>19 Lamine Yamal (AD)<img src="players/Yamal.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Barcellona"></ul>
+    </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

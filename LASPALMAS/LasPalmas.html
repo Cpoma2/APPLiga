@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Las Palmas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffcc00;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="LasPalmas.png" width="100" height="auto" align="center">
+        <img src="Gran%20Canaria.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Luis Carrión</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Miguel Ángel Ramírez Alonso</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1949</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio de Gran Canaria</span>
+        </div>
+    </div>
+
+    <section id="LasPalmas">
+         <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Jasper Cillessen <img src="players/Cillessen.png" class="foto"></h3>
+            <h3>13 Dinko Horkas <img src="players/Horkas.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>25 Álvaro Valles <img src="players/Valles.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-LasPalmas"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>3 Mika Mármol (DC)<img src="players/Marmol.png" class="foto"></h3>
+            <h3>4 Alex Suárez (DC)<img src="players/Suarez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Scott McKenna (DC)<img src="players/McKenna.png" class="foto"></h3>
+            <h3>18 Viti Rozada (TD)<img src="players/Viti.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>22 Daley Sinkgraven (TS)<img src="players/Sinkgraven.png" class="foto"></h3>
+            <h3>23 Álex Muñoz (DC)<img src="players/AlexMunoz.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>28 Juanma Herzog (DC)<img src="players/Herzog.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-LasPalmas"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>5 Javi Muñoz (CC)<img src="players/JaviMunoz.png" class="foto"></h3>
+            <h3>6 Fabio González (CC)<img src="players/Gonzalez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>8 José Campaña (CC)<img src="players/Campana.png" class="foto"></h3>
+            <h3>10 Alberto Moleiro (TQ)<img src="players/Moleiro.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Enzo Loiodice (CC)<img src="players/Loiodice.png" class="foto"></h3> 
+            <h3>20 Kirian Rodríguez (TQ)<img src="players/Rodriguez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>21 Iván Gil (TQ)<img src="players/Gil.png" class="foto"></h3>
+        </div>
+        
+        <ul id="centrocampisti-LasPalmas"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>2 Marvin Park (AD)<img src="players/Park.png" class="foto"></h3>
+            <h3>7 Pejiño (AS)<img src="players/Pejino.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>9 Marc Cardona (AT)<img src="players/Cardona.png" class="foto"></h3>
+            <h3>11 Benito Ramirez (AS)<img src="players/Benito.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Manu Fuster (AS)<img src="players/Fuster.png" class="foto"></h3>
+            <h3>16 Oli McBurnie (AT)<img src="players/McBurnie.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Jaime Mata (AT)<img src="players/Mata.png" class="foto"></h3>
+            <h3>19 Sandro Ramírez (AT)<img src="players/Ramirez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>24 Adnan Januzaj (AD)<img src="players/Januzaj.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-LasPalmas"></ul>
+    </div>
+    </section>
+    
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

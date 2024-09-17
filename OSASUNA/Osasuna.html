@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Osasuna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: darkred;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Osasuna.png" width="175" height="auto" align="center">
+        <img src="El%20Sadar.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Vicente Moreno</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Luis Sabalza</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1920</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio El Sadar</span>
+        </div>
+    </div>
+
+    <section id="Osasuna">
+          <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Sergio Herrera<img src="players/Herrera.png" class="foto"></h3>
+            <h3>13 Aitor Fernández<img src="players/Fernandez.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Osasuna"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Nacho Vidal (TD)<img src="players/NachoVidal.png" class="foto"></h3>
+            <h3>3 Juan Cruz (TS)<img src="players/Cruz.png" class="foto"></h3>
+            <h3>4 Unai García (DC)<img src="players/UnaiGarcia.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>5 Jorge Herrando (DC)<img src="players/Herrando.png" class="foto"></h3>
+            <h3>12 Jesús Areso (TD)<img src="players/Areso.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Rubén Peña (TD)<img src="players/Pena.png" class="foto"></h3>
+            <h3>22 Enzo Boyomo (DC)<img src="players/Boyomo.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>23 Abel Bretones (TS)<img src="players/Bretones.png" class="foto"></h3>
+            <h3>24 Alejandro Catena (DC)<img src="players/Catena.png" class="foto">
+        </div>
+        <ul id="difensori-Osasuna"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>6 Lucas Torró (CC)<img src="players/Torro.png" class="foto"></h3>
+            <h3>7 Jon Moncayola (CC)<img src="players/Moncayola.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>8 Pablo Ibáñez (CC)<img src="players/Ibanez.png" class="foto"></h3>
+            <h3>10 Aimar Oroz (TQ)<img src="players/Oroz.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>18 Iker Muñoz (CC)<img src="players/IkerMunoz.png" class="foto"></h3>
+            <h3>21 Javi Martínez (TQ)<img src="players/Martinez.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Osasuna"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>9 Raúl García (AT)<img src="players/RaulGarcia.png" class="foto"></h3>
+            <h3>11 Kike Barja (AD)<img src="players/KikeBarja.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Rubén García (AD)<img src="players/RubenGarcia.png" class="foto"></h3>
+            <h3>16 Moi Gómez (AS)<img src="players/MoiGomez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Ante Budimir (AT)<img src="players/Budimir.png" class="foto"></h3>
+            <h3>19 Bryan Zaragoza (AS)<img src="players/Zaragoza.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>20 José Manuel Arnáiz (AS)<img src="players/Arnaiz.png" class="foto"></h3>
+            <h3>27 Iker Benito (AD)<img src="players/Benito.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Osasuna"></ul>
+    </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

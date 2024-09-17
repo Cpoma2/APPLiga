@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Espanyol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #007FC8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Espanyol.png" width="125" height="auto" align="center">
+        <img src="Cornellà-El Prat.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Manolo González</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Chen Yansheng</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1900</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadi Cornellà-El Prat</span>
+        </div>
+    </div>
+
+    <section id="Espanyol">
+        <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Joan García<img src="players/Garcia.png" class="foto"></h3>
+            <h3>13 Fernando Pacheco<img src="players/Pacheco.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Espanyol"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>3 Sergi Gómez (DC)<img src="players/Gomez.png" class="foto"></h3>
+            <h3>4 Marash Kumbulla (DC)<img src="players/Kumbulla.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>5 Fernando Calero (DC)<img src="players/Calero.png" class="foto"></h3>
+            <h3>6 Leandro Cabrera (DC)<img src="players/Cabrera.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Álvaro Tejero (TD)<img src="players/Tejero.png" class="foto"></h3>
+            <h3>14 Brian Oliván (TS)<img src="players/Olivan.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>22 Carlos Romero (TS)<img src="players/Romero.png" class="foto"></h3>
+            <h3>23 Omar El Hilali (TD)<img src="players/ElHilali.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Espanyol"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>8 Edu Expósito (CC)<img src="players/Exposito.png" class="foto"></h3>
+            <h3>10 Pol Lozano (CC)<img src="players/Lozano.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 José Gragera (CC)<img src="players/Gragera.png" class="foto"></h3>
+            <h3>18 Álvaro Aguado (CC)<img src="players/Aguado.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>20 Alex Král (CC)<img src="players/Kral.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Espanyol"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Javi Puado (AS)<img src="players/Puado.png" class="foto"></h3>
+            <h3>9 Alejo Veliz (AT)<img src="players/Veliz.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>11 Pere Milla (AS)<img src="players/Milla.png" class="foto"></h3>
+            <h3>16 Walid Cheddira (AT)<img src="players/Cheddira.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Jofre Carreras (AD)<img src="players/Carreras.png" class="foto"></h3>
+            <h3>19 Salvi Sánchez (AD)<img src="players/Sanchez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>24 Irvin Cardona (AT)<img src="players/Cardona.png" class="foto"></h3>
+            <h3>32 Omar Sadik (AT)<img src="players/Sadik.png" class="foto"></h3>
+            <h3>37 Naci Ünüvar (AS)<img src="players/Unuvar.png" class="foto"></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

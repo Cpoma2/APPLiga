@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Celta Vigo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #8AC3EE;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Celta.png" width="100" height="auto" align="center">
+        <img src="Balaidos.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Claudio Giraldez</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Marián Mouriño Terrazo</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1923</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio de Balaídos</span>
+        </div>
+    </div>
+
+    <section id="Celta">
+        <div class="ruolo">
+            <h1>Portieri</h1>
+            <div class="player-pair">
+                <h3>13 Ivan Villar<img src="players/Villar.png" class="foto"></h3>
+                <h3>25 Vicente Guaita<img src="players/Guaita.png" class="foto"></h3>
+            </div>
+            <ul id="portieri-Celta"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Difensori</h1>
+            <div class="player-pair">
+                <h3>2 Carl Starfelt (DC)<img src="players/Starfelt.png" class="foto"></h3>
+                <h3>3 Oscar Mingueza (TD/cd)<img src="players/Mingueza.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>5 Sergio Carreira (TD)<img src="players/Carreira.png" class="foto"></h3>
+                <h3>15 Joseph Aidoo (DC)<img src="players/Aidoo.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>20 Marcos Alonso (TS/dc)<img src="players/Alonso.png" class="foto"></h3>
+                <h3>21 Mihailo Ristic (TS)<img src="players/Ristic.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>22 Javier Manquillo (TD/ts)<img src="players/Manquillo.png" class="foto"></h3>
+                <h3>24 Carlos Domínguez (DC)<img src="players/Dominguez.png" class="foto"></h3>
+                <h3>32 Javi Rodríguez (TD/dc)<img src="players/Rodriguez.png" class="foto"></h3>
+            </div>
+            <ul id="difensori-Celta"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Centrocampisti</h1>
+            <div class="player-pair">
+                <h3>6 Ilaix Moriba (CC)<img src="players/Moriba.png" class="foto"></h3>
+                <h3>8 Fran Beltrán (CC)<img src="players/Beltran.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>14 Luca de la Torre (CC)<img src="players/Delatorre.png" class="foto"></h3>
+                <h3>16 Jailson (CC/dc)<img src="players/Jailson.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>19 Williot Swedberg (TQ/as)<img src="players/Swedberg.png" class="foto"></h3>
+                <h3>28 Damian (CC)<img src="players/Damian.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>30 Hugo Alvarez (ES/ed)<img src="players/Alvarez.png" class="foto"></h3>
+                <h3>33 Hugo Sotelo (CC)<img src="players/Sotelo.png" class="foto"></h3>
+            </div>
+            <ul id="centrocampisti-Celta"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Attaccanti</h1>
+            <div class="player-pair">
+                <h3>7 Borja Iglesias (AT)<img src="players/BorjaIglesias.png" class="foto"></h3>
+                <h3>9 Anastasios Douvikas (AT)<img src="players/Douvikas.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>10 Iago Aspas (AT)<img src="players/IagoAspas.png" class="foto"></h3>
+                <h3>11 Franco Cervi (AS)<img src="players/Cervi.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>12 Alfon (AS/ad)<img src="players/Alfon.png" class="foto"></h3>
+                <h3>17 Jonathan Bamba (AS)<img src="players/Bamba.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>23 Tadeo Allende (AD)<img src="players/Allende.png" class="foto"></h3>
+                <h3>25 Pablo Duran (AT)<img src="players/Duran.png" class="foto"></h3>
+            </div>
+            <ul id="attaccanti-Celta"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

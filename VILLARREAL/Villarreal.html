@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Villarreal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffcc00;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Villarreal.png" width="175" height="auto" align="center">
+        <img src="Ceramica.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Marcelino</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Fernando Roig Alfonso</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1923</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio de la Cerámica</span>
+        </div>
+    </div>
+    <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Luiz Júnior<img src="players/Junior.png" class="foto"></h3>
+            <h3>13 Diego Conde<img src="players/Conde.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>31 Iker Álvarez<img src="players/Alvarez.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Villarreal"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Logan Costa (DC)<img src="players/Costa.png" class="foto"></h3>
+            <h3>3 Raúl Albiol (DC)<img src="players/Albiol.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 Eric Bailly (DC)<img src="players/Bailly.png" class="foto"></h3>
+            <h3>5 Willy Kambwala (DC)<img src="players/Kambwala.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>8 Juan Foyth (TD)<img src="players/Foyth.png" class="foto"></h3>
+            <h3>12 Juan Bernat (TS)<img src="players/Bernat.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Kiko Femenía (TD)<img src="players/Femenia.png" class="foto"></h3>
+            <h3>23 Sergi Cardona (TS)<img src="players/Cardona.png" class="foto"></h3>
+            <h3>24 Alfonso Pedraza (TS)<img src="players/Pedraza.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Villarreal"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>6 Denis Suárez (CC)<img src="players/Suarez.png" class="foto"></h3>
+            <h3>10 Dani Parejo (CC)<img src="players/Parejo.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Santi Comesaña (CC)<img src="players/Comesana.png" class="foto"></h3>
+            <h3>16 Álex Baena (CC)<img src="players/Baena.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>18 Pape Gueye (CC)<img src="players/Gueye.png" class="foto"></h3>
+            <h3>20 Ramón Terrats (CC)<img src="players/Terrats.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Villarreal"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Gerard Moreno (AT)<img src="players/Moreno.png" class="foto"></h3>
+            <h3>11 Ilias Akhomach (AD)<img src="players/Akhomach.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Thierno Barry (AT)<img src="players/Barry.png" class="foto"></h3>
+            <h3>19 Nicolas Pépé (AD)<img src="players/Pepe.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>21 Yéremy Pino (AD)<img src="players/Pino.png" class="foto"></h3>
+            <h3>22 Ayoze Pérez (AS)<img src="players/Perez.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Villarreal"></ul>
+    </div>
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

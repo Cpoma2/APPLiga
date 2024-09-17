@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Leganés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: darkgreen;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Leganes.png" width="125" height="auto" align="center">
+        <img src="Butarque.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Borja Jimenez</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Jeff Luhnow</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1928</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio Municipal de Butarque</span>
+        </div>
+    </div>
+
+    <section id="Leganes">
+        <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Juan Soriano<img src="players/Soriano.png" class="foto"></h3>
+            <h3>13 Marko Dmitrovic<img src="players/Dmitrovic.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Leganes"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Adrià Altimira (TD)<img src="players/Altimira.png" class="foto"></h3>
+            <h3>3 Jorge Sáenz (DC)<img src="players/Saenz.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 Jackson Porozo (DC)<img src="players/Porozo.png" class="foto"></h3>
+            <h3>6 Sergio González (DC)<img src="players/Gonzalez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Valentin Rosier (TD)<img src="players/Rosier.png" class="foto"></h3>
+            <h3>15 Enric Franquesa (TS)<img src="players/Franquesa.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>20 Javi Hernández (TS)<img src="players/Hernandez.png" class="foto"></h3>
+            <h3>22 Matija Nastasic (DC)<img src="players/Nastasic.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Leganes"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>5 Renato Tapia (CC)<img src="players/Tapia.png" class="foto"></h3>
+            <h3>7 Óscar Rodríguez (TQ)<img src="players/Rodriguez.png" class="foto"></h3>
+            <h3>8 Seydouba Cissé (CC)<img src="players/Cisse.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Darko Brasanac (CC)<img src="players/Brasanac.png" class="foto"></h3>
+            <h3>17 Yvan Neyou (CC)<img src="players/Neyou.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>21 Roberto López (TQ)<img src="players/Lopez.png" class="foto"></h3>
+            <h3>24 Julián Chicco (CC)<img src="players/Chicco.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Leganes"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>9 Miguel de la Fuente (AT)<img src="players/DeLaFuente.png" class="foto"></h3>
+            <h3>10 Dani Raba (AD)<img src="players/Raba.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>11 Juan Cruz (AD)<img src="players/Cruz.png" class="foto"></h3>
+            <h3>18 Sebastien Haller (AT)<img src="players/Haller.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>19 Diego García (AT)<img src="players/Garcia.png" class="foto"></h3>
+            <h3>23 Munir El Haddadi (AD)<img src="players/Munir.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>27 Naim García (AD)<img src="players/Naim.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Leganes"></ul>
+    </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

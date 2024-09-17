@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Bilbao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: darkred;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Bilbao.png" width="125" height="auto" align="center">
+        <img src="San Mames.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Ernesto Valverde</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Jon Uriarte</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1898</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>San Mamés</span>
+        </div>
+    </div>
+    <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Unai Simón<img src="players/Simon.png" class="foto"></h3>
+            <h3>13 Julen Agirrezabala<img src="players/Agirrezabala.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Bilbao"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Andoni Gorosabel (TD)<img src="players/Gorosabel.png" class="foto"></h3>
+            <h3>3 Dani Vivian (DC)<img src="players/Vivian.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 Aitor Paredes (DC)<img src="players/Paredes.png" class="foto"></h3>
+            <h3>5 Yeray Álvarez (DC)<img src="players/Yeray.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Unai Núñez (DC)<img src="players/Nunez.png" class="foto"></h3>
+            <h3>15 Iñigo Lekue (TD)<img src="players/Lekue.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>17 Yuri Berchiche (TS)<img src="players/Yuri.png" class="foto"></h3>
+            <h3>18 Óscar de Marcos (TD)<img src="players/DeMarcos.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Bilbao"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>6 Mikel Vesga (CC)<img src="players/Vesga.png" class="foto"></h3>
+            <h3>8 Oihan Sancet (TQ)<img src="players/Sancet.png" class="foto"></h3>
+            <h3>16 Iñigo Ruiz de Galarreta (CC)<img src="players/RuizDeGalarreta.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>20 Unai Gómez (TQ)<img src="players/Gomez.png" class="foto"></h3>
+            <h3>21 Ander Herrera (CC)<img src="players/Herrera.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>23 Mikel Jauregizar (CC)<img src="players/Jauregizar.png" class="foto"></h3>
+            <h3>24 Beñat Prados (CC)<img src="players/Prados.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Bilbao"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Álex Berenguer (AS)<img src="players/Berenguer.png" class="foto"></h3>
+            <h3>9 Iñaki Williams (AD)<img src="players/Williams.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>10 Nico Williams (AS)<img src="players/NicoWilliams.png" class="foto"></h3>
+            <h3>11 Álvaro Djaló (AS)<img src="players/Djalo.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Gorka Guruzeta (AT)<img src="players/Guruzeta.png" class="foto"></h3>
+            <h3>19 Javier Martón (AT)<img src="players/Marton.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>22 Nico Serrano (AS)<img src="players/Serrano.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Bilbao"></ul>
+    </div>
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

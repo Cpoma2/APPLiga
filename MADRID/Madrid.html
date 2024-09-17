@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Real Madrid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #00529F;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Madrid.png" width="175" height="auto" align="center">
+        <img src="Bernabeu.png" width="250" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Carlo Ancelotti</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Florentino Pérez Rodríguez</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1902</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio Santiago Bernabéu</span>
+        </div>
+    </div>
+
+    <section id="RealMadrid">
+        <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Thibaut Courtois<img src="players/Courtois.png" class="foto"></h3>
+            <h3>13 Andriy Lunin<img src="players/Lunin.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-RealMadrid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Daniel Carvajal (TD)<img src="players/Carvajal.png" class="foto"></h3>
+            <h3>3 Éder Militão (DC)<img src="players/Militao.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 David Alaba (DC)<img src="players/Alaba.png" class="foto"></h3>
+            <h3>17 Lucas Vázquez (TD)<img src="players/Vazquez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>18 Jesús Vallejo (DC)<img src="players/Vallejo.png" class="foto"></h3>
+            <h3>20 Fran García (TS)<img src="players/Garcia.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>22 Antonio Rüdiger (DC)<img src="players/Rudiger.png" class="foto"></h3>
+            <h3>23 Ferland Mendy (TS)<img src="players/Mendy.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-RealMadrid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>5 Jude Bellingham (TQ)<img src="players/Bellingham.png" class="foto"></h3>
+            <h3>6 Eduardo Camavinga (CC)<img src="players/Camavinga.png" class="foto"></h3>
+            <h3>8 Federico Valverde (CC)<img src="players/Valverde.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>10 Luka Modric (CC)<img src="players/Modric.png" class="foto"></h3>
+            <h3>14 Aurélien Tchouaméni (CC)<img src="players/Tchouameni.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>19 Dani Ceballos (CC)<img src="players/Ceballos.png" class="foto"></h3>
+            <h3>21 Brahim Díaz (TQ)<img src="players/Diaz.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-RealMadrid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Vinicius Junior (AS)<img src="players/Vinicius.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>9 Kylian Mbappé (AT)<img src="players/Mbappe.png" class="foto"></h3>
+            <h3>11 Rodrygo (AD)<img src="players/Rodrygo.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Arda Güler (AD)<img src="players/Guler.png" class="foto"></h3>
+            <h3>16 Endrick (AT)<img src="players/Endrick.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-RealMadrid"></ul>
+    </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

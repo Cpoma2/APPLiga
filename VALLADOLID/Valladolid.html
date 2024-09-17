@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Real Valladolid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: purple;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Valladolid.png" width="125" height="auto" align="center">
+        <img src="Jose%20Zorrilla.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Paulo Pezzolano</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Ronaldo Luis Nazário de Lima</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1928</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Estadio Municipal José Zorrilla</span>
+        </div>
+    </div>
+
+    <section id="Valladolid">
+        <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 André Ferreira<img src="players/Ferreira.png" class="foto"></h3>
+            <h3>13 Karl Hein<img src="players/Hein.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Valladolid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>2 Luis Pérez (TD)<img src="players/Perez.png" class="foto"></h3>
+            <h3>3 David Torres (DC)<img src="players/Torres.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>5 Javi Sánchez (DC)<img src="players/Sanchez.png" class="foto"></h3>
+            <h3>6 Cenk Özkacar (DC)<img src="players/Ozkacar.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>15 Eray Cömert (DC)<img src="players/Comert.png" class="foto"></h3>
+            <h3>22 Lucas Rosa (TD)<img src="players/Rosa.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Valladolid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>4 Víctor Meseguer (CC)<img src="players/Meseguer.png" class="foto"></h3>
+            <h3>8 Kike Pérez (CC)<img src="players/Perez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Mario Martín (CC)<img src="players/Martin.png" class="foto"></h3>
+            <h3>16 César de la Hoz (CC)<img src="players/DeLaHoz.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>20 Stanko Juric (CC)<img src="players/Juric.png" class="foto"></h3>
+            <h3>21 Selim Amallah (TQ)<img src="players/Amallah.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>23 Anuar (TQ)<img src="players/Anuar.png" class="foto"></h3>
+            <h3>28 Chuki (TQ)<img src="players/Chuki.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Valladolid"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Mamadou Sylla (AT)<img src="players/Sylla.png" class="foto"></h3>
+            <h3>9 Marcos André (AT)<img src="players/Andre.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>10 Iván Sánchez (AD)<img src="players/Sanchez.png" class="foto"></h3>
+            <h3>11 Raúl Moro (AS)<img src="players/Moro.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>14 Juanmi Latasa (AT)<img src="players/Latasa.png" class="foto"></h3>
+            <h3>18 Darwin Machís (AS)<img src="players/Machis.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>19 Amath Ndiaye (AD)<img src="players/Ndiaye.png" class="foto"></h3>
+            <h3>24 Kenedy (AS)<img src="players/Kenedy.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Valladolid"></ul>
+    </div>
+    
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

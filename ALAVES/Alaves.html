@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Alaves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: darkblue;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Alaves.png" width="150" height="auto" align="center">
+        <img src="Mendizorroza.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>Luis Garcia</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Alfonso Fernández de Trocóniz</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1921</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Mendizorroza</span>
+        </div>
+    </div>
+    <div class="ruolo">
+        <h1>Portieri</h1>
+        <div class="player-pair">
+            <h3>1 Sivera<img src="players/Sivera.png" class="foto"></h3>
+            <h3>13 Owono<img src="players/Owono.png" class="foto"></h3>
+            <h3>31 Adrian<img src="players/Adrian.png" class="foto"></h3>
+        </div>
+        <ul id="portieri-Alaves"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Difensori</h1>
+        <div class="player-pair">
+            <h3>3 Manu Sanchez (TS)<img src="players/Sanchez.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>4 Sedlar (DC/td)<img src="players/Sedlar.png" class="foto"></h3>
+            <h3>5 Abqar (DC)<img src="players/Abqar.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>12 Santiago Mouriño (DC)<img src="players/Mourino.png" class="foto"></h3>
+            <h3>14 Tenaglia (TD/dc)<img src="players/Tenaglia.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>16 Novoa (TD/ed)<img src="players/Novoa.png" class="foto"></h3></h3>
+            <h3>22 Diarra (DC)<img src="players/Diarra.png" class="foto"></h3>
+        </div>
+        <ul id="difensori-Alaves"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Centrocampisti</h1>
+        <div class="player-pair">
+            <h3>6 Guevara (CC)<img src="players/Guevara.png" class="foto"></h3>
+            <h3>8 Blanco (CC)<img src="players/Blanco.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>10 Conechny (ES/tq)<img src="players/Conechny.png" class="foto"></h3>
+            <h3>18 Guridi (CC)<img src="players/Guridi.png" class="foto"></h3>
+        </div>
+         <div class="player-pair">
+            <h3>20 Romero (ED/tq)<img src="players/Romero.png" class="foto"></h3>
+            <h3>23 Benadivez (CC)<img src="players/Benadivez.png" class="foto"></h3>
+            <h3>24 Joan Jordan (CC)<img src="players/Jordan.png" class="foto"></h3>
+        </div>
+        <ul id="centrocampisti-Alaves"></ul>
+    </div>
+    <div class="ruolo">
+        <h1>Attaccanti</h1>
+        <div class="player-pair">
+            <h3>7 Vicente (AD/at)<img src="players/Vicente.png" class="foto"></h3>
+            <h3>9 Villalibre (AT)<img src="players/Villalibre.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>11 Toni Martinez (AT)<img src="players/Martinez.png" class="foto"></h3>
+            <h3>17 Kike Garcia (AT)<img src="players/Kike.png" class="foto"></h3>
+        </div>
+        <div class="player-pair">
+            <h3>19 Stoichkov (AS)<img src="players/Stoichkov.png" class="foto"></h3>
+            <h3>21 Rebbach (AS/ad)<img src="players/Rebbach.png" class="foto"></h3>
+        </div>
+        <ul id="attaccanti-Alaves"></ul>
+    </div>
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>

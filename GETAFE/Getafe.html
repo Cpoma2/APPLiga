@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatori Getafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: darkblue;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 img {
+            vertical-align: middle;
+        }
+        .ruolo, .details {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .ruolo h1, .details h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .ruolo h3, .detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        .ruolo h3 img.foto, .details h3 img.foto {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            object-fit: cover;
+        }
+        .detail {
+            justify-content: space-between;
+        }
+        .detail label {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .player-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ruolo h3, .detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ruolo h3 img.foto, .details h3 img.foto {
+                margin: 10px 0 0 0;
+            }
+            .player-pair {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="Getafe.png" width="150" height="auto" align="center">
+        <img src="Coliseum.png" width="275" height="auto" align="center">
+    </h1>
+    <div class="details">
+        <h2>Dettagli Squadra</h2>
+        <div class="detail">
+            <label>Allenatore:</label>
+            <span>José Bordalas</span>
+        </div>
+        <div class="detail">
+            <label>Presidente:</label>
+            <span>Ángel Torres Sánchez</span>
+        </div>
+        <div class="detail">
+            <label>Fondazione:</label>
+            <span>1983</span>
+        </div>
+        <div class="detail">
+            <label>Stadio:</label>
+            <span>Coliseum Alfonso Pérez</span>
+        </div>
+    </div>
+
+    <section id="Getafe">
+        <div class="ruolo">
+            <h1>Portieri</h1>
+            <div class="player-pair">
+                <h3>1 Jiri Letáček <img src="players/Letacek.png" class="foto"></h3>
+                <h3>13 David Soria <img src="players/Soria.png" class="foto"></h3>
+            </div>
+            <ul id="portieri-Getafe"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Difensori</h1>
+            <div class="player-pair">
+                <h3>2 Djené (DC/td) <img src="players/Djene.png" class="foto"></h3>
+                <h3>3 Fabrizio Angileri (TS/td) <img src="players/Angileri.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>4 Juan Berrocal (DC) <img src="players/Berrocal.png" class="foto"></h3>
+                <h3>7 Alex Sola (TD/AD) <img src="players/Sola.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>15 Omar Alderete (DC/ts) <img src="players/Alderete.png" class="foto"></h3>
+                <h3>16 Diego Rico (TS/dc) <img src="players/Rico.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>21 Juan Iglesias (TD/ts) <img src="players/Iglesias.png" class="foto"></h3>
+                <h3>22 Domingos Duarte (DC) <img src="players/Duarte.png" class="foto"></h3>
+            </div>
+            <ul id="difensori-Getafe"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Centrocampisti</h1>
+            <div class="player-pair">
+                <h3>5 Milla (CC/tq) <img src="players/Milla.png" class="foto"></h3>
+                <h3>6 Uche (CC/dc) <img src="players/Uche.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>8 Arambarri (CC) <img src="players/Arambarri.png" class="foto"></h3>
+                <h3>11 Aleñá (CC/tq) <img src="players/Alena.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>20 Santiago Yellu (CC) <img src="players/Yellu.png" class="foto"></h3>
+            </div>
+            <ul id="centrocampisti-Getafe"></ul>
+        </div>
+
+        <div class="ruolo">
+            <h1>Attaccanti</h1>
+            <div class="player-pair">
+                <h3>9 Mayoral (AT) <img src="players/Mayoral.png" class="foto"></h3>
+                <h3>10 Bertuğ Yıldırım (AT) <img src="players/Yildirim.png" class="foto"></h3>
+                <h3>17 Carles Perez (AD)<img src="players/Perez.png" class="foto"></h3>
+            </div>
+            <div class="player-pair">
+                <h3>18 Alvaro Rodriguez (AT) <img src="players/Rodriguez.png" class="foto"></h3>
+                <h3>19 Peter Federico (AD) <img src="players/Peter.png" class="foto"></h3>
+            </div>
+            <ul id="attaccanti-Getafe"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Torna alla squadre</a></p>
+    </footer>
+</body>
+</html>
